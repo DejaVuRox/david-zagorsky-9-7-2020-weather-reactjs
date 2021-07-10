@@ -1,0 +1,9 @@
+.favoriteItem {
+    margin: 0 5px;
+    width: 240px
+}
+
+.favoriteCard {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,15 @@
+.homeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px
+}
+
+.controlContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    gap: 50px;
+}

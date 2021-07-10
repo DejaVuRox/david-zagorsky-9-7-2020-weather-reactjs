@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Route} from "react-router";
+import Home from "./pages/home/Home";
+import Favorites from "./pages/favorites/Favorites";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const lightTheme = 'linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)'
+    return (
+        <div className="App" style={{
+            backgroundImage: lightTheme
+        }}>
+            <Route exact path={'/'} render={() => <Home/>}/>
+            <Route exact path={'/favorites'} render={() => <Favorites/>}/>
+        </div>
+    );
 }
 
 export default App;
