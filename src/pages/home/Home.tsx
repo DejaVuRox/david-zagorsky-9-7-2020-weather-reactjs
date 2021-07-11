@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, {FC, useEffect} from 'react';
 import Search from "../../components/search/Search";
 import {connect} from 'react-redux'
 import {NavLink} from "react-router-dom";
@@ -20,10 +20,10 @@ interface IProps {
 
 const Home: FC<IProps> = ({getCurrentCityWeather, getCurrentCityWeatherForecast, isMetric, currentCityData}) => {
 
-    // useEffect(() => {
-    //     getCurrentCityWeather()
-    //     getCurrentCityWeatherForecast(isMetric)
-    // }, [currentCityData?.cityName, isMetric]);
+    useEffect(() => {
+        getCurrentCityWeather()
+        getCurrentCityWeatherForecast(isMetric)
+    }, [currentCityData?.cityName, isMetric]);
 
     return (
         <div className={'homeContainer'}>

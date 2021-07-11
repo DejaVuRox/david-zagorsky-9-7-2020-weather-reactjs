@@ -6,8 +6,8 @@ import {
     SET_TEMP_UNIT
 } from "../actions/weatherActions";
 
-import forecastJson from "../../components/dummyData/forecast.json"
-import currentCity from "../../components/dummyData/currentCity.json"
+import forecastJson from "../../dummyData/forecast.json"
+import currentCity from "../../dummyData/currentCity.json"
 
 type IActionsType =
     typeof GET_CURRENT_WEATHER
